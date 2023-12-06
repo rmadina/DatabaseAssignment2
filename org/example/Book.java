@@ -218,7 +218,7 @@ public class Book {
         Connection connection = Connect("MadinaDataAssign2", "madinarustamova", "Medine2233!");
 
         // Insert examples into Books and Customers tables
-        CreatedBook(connection, "5", "The Great Gatsby", "1", "50", "19.99", "1925");
+        CreatedBook(connection, "100", "The Great Gatsby", "1", "50", "19.99", "1925");
 //        // other insert statements...
 //
 //        // Read data from Books table with additional JOINs
