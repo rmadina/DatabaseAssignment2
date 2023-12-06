@@ -8,7 +8,7 @@ public class Book {
         try {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + database_name, username, password);
-            if(connection != null) {
+            if (connection != null) {
                 System.out.println("connected");
             } else {
                 System.out.println("not connected");
@@ -214,11 +214,11 @@ public class Book {
         }
     }
 
-    public static void Book(String[] args) {
+    public static void main(String[] args) {
         Connection connection = Connect("MadinaDataAssign2", "madinarustamova", "Medine2233!");
 
         // Insert examples into Books and Customers tables
-        CreatedBook(connection, "101", "The Great Gatsby", "1", "50", "19.99", "1925");
+        CreatedBook(connection, "5", "The Great Gatsby", "1", "50", "19.99", "1925");
 //        // other insert statements...
 //
 //        // Read data from Books table with additional JOINs
@@ -244,4 +244,6 @@ public class Book {
 //        ColumnDetail(connection);
 //        Primary_Key(connection);
 //        Foreign_Key(connection);
- //   }
+        //   }
+    }
+}
